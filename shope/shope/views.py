@@ -87,5 +87,5 @@ def callback(request):
  
             # if we don't find the required parameters in POST data
     else:
-       # if other than POST request is made.
+       # if other than POST request is done
         return HttpResponseBadRequest()

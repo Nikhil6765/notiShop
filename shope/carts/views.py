@@ -152,7 +152,7 @@ def checkout(request, total=0, quantity=0, cart_items=None):
             quantity += cart_item.quantity
         tax = (2 * total)/100 
         grand_total = total + tax 
-    except ObjectDoesNotExist:
+    #except ObjectDoesNotExist:
         pass # just ignore
 
     context = {
